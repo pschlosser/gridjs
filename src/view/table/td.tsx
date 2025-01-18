@@ -81,6 +81,8 @@ export function TD(
         ...config.style.td,
       }}
       onClick={handleClick}
+      // @ts-ignore: Allow onAuxClick
+      onAuxClick={handleClick}
       {...getCustomAttributes(props.column)}
     >
       {content()}

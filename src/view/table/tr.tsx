@@ -54,6 +54,8 @@ export function TR(props: {
     <tr
       className={classJoin(className('tr'), config.className.tr)}
       onClick={handleClick}
+      // @ts-ignore: Allow onAuxClick
+      onAuxClick={handleClick}
     >
       {getChildren()}
     </tr>
